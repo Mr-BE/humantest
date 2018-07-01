@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">Human Test</string>
+
+    <!--Brief intro heading-->
+
+    <string name="header"> Are you a person who is frequently called weird or crazy, or perhaps your appearance is different?
+        There are many disguised aliens in this world, and you could be one, without knowing.</string>
+
+    <!--Header texts for questions-->
+    <string name="question_1">Question 1</string>
+    <string name="question_2">Question 2</string>
+    <string name="question_3">Question 3</string>
+    <string name="question_4">Question 4</string>
+    <string name="question_5">Question 5</string>
+    <string name="question_6">Question 6</string>
+    <string name="question_7">Question 7</string>
+    <string name="question_8">Question 8</string>
+    <string name="question_9">Question 9</string>
+    <string name="question_10">Question 10</string>
+
+    <!--Question Texts-->
+    <string name="q1">Which planet is usually referred to as Earth\'s twin? </string>
+    <string name="q2">Which country started the World War 2?</string>
+    <string name="q3">What is the largest water body on Earth?</string>
+    <string name="q4">Which of these is the highest mountain range on Earth? </string>
+    <string name="q5">What country first sent a satellite out of Earth?</string>
+    <string name="q6">Which of these Earth deserts is the driest?</string>
+    <string name="q7">What is the deepest point on Earth?</string>
+    <string name="q8">Which two countries have been involved in \n Nuclear combat?</string>
+    <string name="q9">What river is the longest on Earth?</string>
+    <string name="q10">Which is the second most populous country on Earth? </string>
+
+
+    <!--Answer option texts [CHAR Limit =20]-->
+    <string name="mercury">Mercury</string>
+    <string name="mars">Mars</string>
+    <string name="venus">Venus</string>
+    <string name="uranus">Uranus</string>
+    <string name="andes">Andes</string>
+    <string name="alps">Alps</string>
+    <string name="tian_shan">Tian Shan</string>
+    <string name="himalayas">Himalayas</string>
+    <string name="sahara">Sahara</string>
+    <string name="namib">Namib</string>
+    <string name="atacama">Atacama</string>
+    <string name="mohave">Mohave</string>
+    <string name="rift_valley">Great Rift Valley</string>
+    <string name="mariana">Mariana Trench </string>
+    <string name="death_valley">Death Valley</string>
+    <string name="dead_sea">Dead Sea</string>
+    <string name="nile">Nile</string>
+    <string name="amazon">Amazon</string>
+    <string name="mississippi">Mississippi</string>
+    <string name="niger">Niger</string>
+    <string name="china">China</string>
+    <string name="nigeria">Nigeria</string>
+    <string name="russia">Russia</string>
+    <string name="india">India</string>
+    <string name="atlantic">Atlantic Ocean</string>
+    <string name="indian">Indian Ocean</string>
+    <string name="pacific">Pacific Ocean</string>
+    <string name="arctic">Arctic Ocean</string>
+    <string name="usa">USA</string>
+    <string name="israel">Israel</string>
+    <string name="japan">Japan</string>
+    <string name="germany">Germany</string>
+    <string name="england">England</string>
+    <string name="dprk">North Korea</string>
+
+    <!--Text for editText answer hint-->
+    <string name="river_name">River name</string>
+
+    <!--Text for AI checkbox-->
+    <string name="ai_check">I\'m not a robot</string>
+
+    <!--Text for submit button-->
+    <string name="submit">Submit</string>
+
+    <!--Text for reset button-->
+    <string name="reset">Reset</string>
+
+    <!--Text for share button-->
+    <string name="share">Share</string>
+
+
+    <!--Hint text for EditText field-->
+    <string name="enter_name">Enter your name please</string>
+
+    <!--Intro-->
+    <string name="intro"> Are you a person who is frequently called weird or crazy or perhaps
+    your appearance is different?\n\nYou could be an alien disguised as a human.\nDon\'t believe me?\n\nWhy not take the test yourself? </string>
+
+    <!--Text for proceed button-->
+    <string name="proceed">Proceed to test</string>
+
+</resources>

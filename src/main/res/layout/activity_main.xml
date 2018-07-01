@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/earth1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <!--Earth's Twin question-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/my_background"
+            android:orientation="vertical"
+            android:paddingBottom="8dp">
+
+            <TextView
+                style="@style/QuestionHeaderStyle"
+                android:text="@string/question_1" />
+
+            <TextView
+                style="@style/QuestionStyle"
+                android:text="@string/q1" />
+
+            <RadioGroup
+                android:id="@+id/earth_twin_RG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp">
+
+                <RadioButton
+                    android:id="@+id/mecury_RB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="@string/mercury" />
+
+                <RadioButton
+                    android:id="@+id/mars_RB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mars" />
+
+                <RadioButton
+                    android:id="@+id/venus_RB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/venus" />
+
+                <RadioButton
+                    android:id="@+id/uranus_RB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/uranus" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <!--World war -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/my_background"
+            android:orientation="vertical"
+            android:paddingBottom="8dp">
+
+            <TextView
+                style="@style/QuestionHeaderStyle"
+                android:text="@string/question_2" />
+
+            <TextView
+                style="@style/QuestionStyle"
+                android:text="@string/q2" />
+
+            <RadioGroup
+                android:id="@+id/world_war_RG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp">
+
+                <RadioButton
+                    android:id="@+id/japan_ww_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/japan" />
+
+                <RadioButton
+                    android:id="@+id/usa_ww_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/usa" />
+
+                <RadioButton
+                    android:id="@+id/germany_ww_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/germany" />
+
+                <RadioButton
+                    android:id="@+id/england_ww_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/england" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--Largest water body-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/my_background"
+            android:orientation="vertical"
+            android:paddingBottom="8dp">
+
+            <TextView
+                style="@style/QuestionHeaderStyle"
+                android:text="@string/question_3" />
+
+            <TextView
+                style="@style/QuestionStyle"
+                android:text="@string/q3" />
+
+            <RadioGroup
+                android:id="@+id/water_body_RG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp">
+
+                <RadioButton
+                    android:id="@+id/atlantic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/atlantic" />
+
+                <RadioButton
+                    android:id="@+id/indian_oc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/indian" />
+
+                <RadioButton
+                    android:id="@+id/pacific"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pacific" />
+
+                <RadioButton
+                    android:id="@+id/arctic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/arctic" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--Highest mountain-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/my_background"
+            android:orientation="vertical"
+            android:paddingBottom="8dp">
+
+            <TextView
+                style="@style/QuestionHeaderStyle"
+                android:text="@string/question_4" />
+
+            <TextView
+                style="@style/QuestionStyle"
+                android:text="@string/q4" />
+
+            <RadioGroup
+                android:id="@+id/mountain_range_RG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp">
+
+                <RadioButton
+                    android:id="@+id/andes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/andes" />
+
+                <RadioButton
+                    android:id="@+id/alps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/alps" />
+
+                <RadioButton
+                    android:id="@+id/tian_shan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tian_shan" />
+
+                <RadioButton
+                    android:id="@+id/himalayas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/himalayas" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--Satellite-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/my_background"
+            android:orientation="vertical"
+            android:paddingBottom="8dp">
+
+            <TextView
+                style="@style/QuestionHeaderStyle"
+                android:text="@string/question_5" />
+
+            <TextView
+                style="@style/QuestionStyle"
+                android:text="@string/q5" />
+
+            <RadioGroup
+                android:id="@+id/satellite_RG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp">
+
+                <RadioButton
+                    android:id="@+id/china_sat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/china" />
+
+                <RadioButton
+                    android:id="@+id/usa_sat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/usa" />
+
+                <RadioButton
+                    android:id="@+id/israel_sat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/israel" />
+
+                <RadioButton
+                    android:id="@+id/russia_sat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/russia" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--Dry desert-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/my_background"
+            android:orientation="vertical"
+            android:paddingBottom="8dp">
+
+            <TextView
+                style="@style/QuestionHeaderStyle"
+                android:text="@string/question_6" />
+
+            <TextView
+                style="@style/QuestionStyle"
+                android:text="@string/q6" />
+
+            <RadioGroup
+                android:id="@+id/desert_RG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp">
+
+                <RadioButton
+                    android:id="@+id/sahara"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/sahara" />
+
+                <RadioButton
+                    android:id="@+id/namib"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/namib" />
+
+                <RadioButton
+                    android:id="@+id/atacama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/atacama" />
+
+                <RadioButton
+                    android:id="@+id/mohave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mohave" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--Deep point-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/my_background"
+            android:orientation="vertical"
+            android:paddingBottom="8dp">
+
+            <TextView
+                style="@style/QuestionHeaderStyle"
+                android:text="@string/question_7" />
+
+            <TextView
+                style="@style/QuestionStyle"
+                android:text="@string/q7" />
+
+            <RadioGroup
+                android:id="@+id/deepest_point_RG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp">
+
+                <RadioButton
+                    android:id="@+id/rift_valley"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/rift_valley" />
+
+                <RadioButton
+                    android:id="@+id/mariana"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mariana" />
+
+                <RadioButton
+                    android:id="@+id/death_valley"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/death_valley" />
+
+                <RadioButton
+                    android:id="@+id/dead_sea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dead_sea" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--Nuke-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/my_background"
+            android:orientation="vertical"
+            android:paddingBottom="8dp">
+
+            <TextView
+                style="@style/QuestionHeaderStyle"
+                android:text="@string/question_8" />
+
+            <TextView
+                style="@style/QuestionStyle"
+                android:text="@string/q8" />
+
+            <CheckBox
+                android:id="@+id/usa_nuke_CB"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/usa" />
+
+            <CheckBox
+                android:id="@+id/north_korea_nuke_CB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/dprk" />
+
+            <CheckBox
+                android:id="@+id/russia_nuke_CB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/russia" />
+
+            <CheckBox
+                android:id="@+id/japan_nuke_CB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/japan" />
+        </LinearLayout>
+
+
+        <!--Longest river-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/my_background"
+            android:orientation="vertical"
+            android:paddingBottom="8dp">
+
+            <TextView
+                style="@style/QuestionHeaderStyle"
+                android:text="@string/question_9" />
+
+            <TextView
+                style="@style/QuestionStyle"
+                android:text="@string/q9" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/my_background"
+
+                >
+
+                <EditText
+                    android:id="@+id/river_answer_ET"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="@string/river_name" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <!--Populous-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/my_background"
+            android:orientation="vertical"
+            android:paddingBottom="8dp">
+
+            <TextView
+                style="@style/QuestionHeaderStyle"
+                android:text="@string/question_10" />
+
+            <TextView
+                style="@style/QuestionStyle"
+                android:text="@string/q10" />
+
+            <RadioGroup
+                android:id="@+id/populous_RG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp">
+
+                <RadioButton
+                    android:id="@+id/china_pop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/china" />
+
+                <RadioButton
+                    android:id="@+id/nigeria_pop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nigeria" />
+
+                <RadioButton
+                    android:id="@+id/russia_pop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/russia" />
+
+                <RadioButton
+                    android:id="@+id/india_pop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/india" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/my_background"
+
+            >
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:hint="@string/enter_name" />
+
+        </RelativeLayout>
+
+        <CheckBox
+            android:id="@+id/aiCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/my_background"
+            android:padding="8dp"
+            android:text="@string/ai_check" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp">
+
+
+            <ImageButton
+                android:id="@+id/reset_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/my_button"
+                android:onClick="reset"
+                android:src="@drawable/reset" />
+
+
+            <ImageButton
+                android:id="@+id/share_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/my_button"
+                android:onClick="share"
+                android:src="@drawable/share" />
+
+
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/my_button"
+                android:onClick="submit"
+                android:text="@string/submit" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>
