@@ -2,12 +2,14 @@ package codeblaq.humantest;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
@@ -255,7 +257,51 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
+        if (twinValue == 0){
+
+            twinQ.setBackgroundColor(Color.RED);
+        }
+
+        if (waterBodyValue == 0){
+            LinearLayout waterQ = findViewById(R.id.waterBodyQ);
+            waterQ.setBackgroundColor(Color.RED);
+        }
+        if (worldWarValue == 0){
+            LinearLayout worldWarQ = findViewById(R.id.worldWarQ);
+            worldWarQ.setBackgroundColor(Color.RED);
+        }
+        if (nukeValue == 0){
+            LinearLayout nukeQ = findViewById(R.id.nukeQ);
+            nukeQ.setBackgroundColor(Color.RED);
+        }
+        if (desertValue == 0){
+            LinearLayout desertQ = findViewById(R.id.desertQ);
+            desertQ.setBackgroundColor(Color.RED);
+        }
+        if (deepestPointValue == 0){
+            LinearLayout deepestQ = findViewById(R.id.deepPointQ);
+            deepestQ.setBackgroundColor(Color.RED);
+        }
+        if (rangeValue == 0){
+            LinearLayout rangeQ = findViewById(R.id.highestRangeQ);
+            rangeQ.setBackgroundColor(Color.RED);
+        }
+        if (populousValue == 0){
+            LinearLayout populousQ = findViewById(R.id.mostPoplousQ);
+            populousQ.setBackgroundColor(Color.RED);
+        }
+        if (satelliteValue ==0){
+            LinearLayout satelliteQ = findViewById(R.id.satelliteQ);
+            satelliteQ.setBackgroundColor(Color.RED);
+        }
+        if (riverValue == 0){
+            LinearLayout riverQ = findViewById(R.id.longRiverQ);
+            riverQ.setBackgroundColor(Color.RED);
+        }
+
     }
+
+
     /**
      * Method for the reset button
      */
