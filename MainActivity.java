@@ -466,9 +466,8 @@ public class MainActivity extends AppCompatActivity {
         int duration = Toast.LENGTH_SHORT;
 
         //User has not done test
-        if (message.isEmpty()) {
-            Toast.makeText(context, warning, duration).show();
-        } else {
+        if (message != null) {
+
             //Create Intent
             Intent sharingIntent = new Intent();
             sharingIntent.setAction(Intent.ACTION_SEND);
@@ -482,6 +481,10 @@ public class MainActivity extends AppCompatActivity {
             sharingIntent.putExtra(Intent.EXTRA_TEXT, intentContent);
             //Start Intent
             startActivity(sharingIntent);
+
+        } else {
+            Toast.makeText(context, warning, duration).show();
+
         }
     }
 
