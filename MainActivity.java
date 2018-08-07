@@ -257,6 +257,10 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
+        /*
+        Color highlights for wrong answers
+         */
+
         if (twinValue == 0) {
 
             twinQ.setBackgroundColor(Color.RED);
