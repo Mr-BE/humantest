@@ -262,7 +262,7 @@ public class MainActivity extends AppCompatActivity {
          */
 
         if (twinValue == 0) {
-
+            LinearLayout twinQ = findViewById(R.id.twinQ);
             twinQ.setBackgroundColor(Color.RED);
         }
 
