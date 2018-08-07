@@ -77,6 +77,21 @@ public class MainActivity extends AppCompatActivity {
     String score;
     String message;
 
+    /*
+    Linear layout values
+     */
+
+    LinearLayout twinQ;
+    LinearLayout waterQ;
+    LinearLayout worldWarQ;
+    LinearLayout nukeQ;
+    LinearLayout desertQ;
+    LinearLayout deepestQ;
+    LinearLayout rangeQ;
+    LinearLayout populousQ;
+    LinearLayout satelliteQ;
+    LinearLayout riverQ;
+
 
 
 
@@ -261,45 +276,46 @@ public class MainActivity extends AppCompatActivity {
         Color highlights for wrong answers
          */
 
+        //If answer value is wrong
         if (twinValue == 0) {
-            LinearLayout twinQ = findViewById(R.id.twinQ);
+            twinQ = findViewById(R.id.twinQ);
             twinQ.setBackgroundColor(Color.RED);
         }
 
         if (waterBodyValue == 0) {
-            LinearLayout waterQ = findViewById(R.id.waterBodyQ);
+            waterQ = findViewById(R.id.waterBodyQ);
             waterQ.setBackgroundColor(Color.RED);
         }
         if (worldWarValue == 0) {
-            LinearLayout worldWarQ = findViewById(R.id.worldWarQ);
+            worldWarQ = findViewById(R.id.worldWarQ);
             worldWarQ.setBackgroundColor(Color.RED);
         }
         if (nukeValue == 0) {
-            LinearLayout nukeQ = findViewById(R.id.nukeQ);
+            nukeQ = findViewById(R.id.nukeQ);
             nukeQ.setBackgroundColor(Color.RED);
         }
         if (desertValue == 0) {
-            LinearLayout desertQ = findViewById(R.id.desertQ);
+            desertQ = findViewById(R.id.desertQ);
             desertQ.setBackgroundColor(Color.RED);
         }
         if (deepestPointValue == 0) {
-            LinearLayout deepestQ = findViewById(R.id.deepPointQ);
+            deepestQ = findViewById(R.id.deepPointQ);
             deepestQ.setBackgroundColor(Color.RED);
         }
         if (rangeValue == 0) {
-            LinearLayout rangeQ = findViewById(R.id.highestRangeQ);
+            rangeQ = findViewById(R.id.highestRangeQ);
             rangeQ.setBackgroundColor(Color.RED);
         }
         if (populousValue == 0) {
-            LinearLayout populousQ = findViewById(R.id.mostPoplousQ);
+            populousQ = findViewById(R.id.mostPoplousQ);
             populousQ.setBackgroundColor(Color.RED);
         }
         if (satelliteValue == 0) {
-            LinearLayout satelliteQ = findViewById(R.id.satelliteQ);
+            satelliteQ = findViewById(R.id.satelliteQ);
             satelliteQ.setBackgroundColor(Color.RED);
         }
         if (riverValue == 0) {
-            LinearLayout riverQ = findViewById(R.id.longRiverQ);
+            riverQ = findViewById(R.id.longRiverQ);
             riverQ.setBackgroundColor(Color.RED);
         }
 
@@ -407,6 +423,39 @@ public class MainActivity extends AppCompatActivity {
         riverEditText.setText("");
 
         }
+
+        /*
+        Reset background color
+         */
+        twinQ = findViewById(R.id.twinQ);
+        twinQ.setBackgroundResource(R.drawable.my_background);
+
+        waterQ = findViewById(R.id.waterBodyQ);
+        waterQ.setBackgroundResource(R.drawable.my_background);
+
+        desertQ = findViewById(R.id.desertQ);
+        desertQ.setBackgroundResource(R.drawable.my_background);
+
+        riverQ = findViewById(R.id.longRiverQ);
+        riverQ.setBackgroundResource(R.drawable.my_background);
+
+        rangeQ = findViewById(R.id.highestRangeQ);
+        rangeQ.setBackgroundResource(R.drawable.my_background);
+
+        nukeQ = findViewById(R.id.nukeQ);
+        nukeQ.setBackgroundResource(R.drawable.my_background);
+
+        worldWarQ = findViewById(R.id.worldWarQ);
+        worldWarQ.setBackgroundResource(R.drawable.my_background);
+
+        satelliteQ = findViewById(R.id.satelliteQ);
+        satelliteQ.setBackgroundResource(R.drawable.my_background);
+
+        populousQ = findViewById(R.id.mostPoplousQ);
+        populousQ.setBackgroundResource(R.drawable.my_background);
+
+        deepestQ = findViewById(R.id.deepPointQ);
+        deepestQ.setBackgroundResource(R.drawable.my_background);
     }
     /**
      * Method for the share button
