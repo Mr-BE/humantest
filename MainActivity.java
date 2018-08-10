@@ -17,22 +17,22 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     // Variables for EditText fields
-    EditText riverEditText;
-    String riverText;
-    EditText usernameET;
-    String userName;
+    private EditText riverEditText;
+    private String riverText;
+    private EditText usernameET;
+    private String userName;
 
     //Values for answers
-    int twinAnswer;
-    int rangeAnswer;
-    int worldWarAnswer;
-    int waterBodyAnswer;
-    int satelliteAnswer;
-    int desertAnswer;
-    int deepestPointAnswer;
-    int populousAnswer;
-    int riverAnswer;
-    int nukeAnswer;
+    private int twinAnswer;
+    private int rangeAnswer;
+    private int worldWarAnswer;
+    private int waterBodyAnswer;
+    private int satelliteAnswer;
+    private int desertAnswer;
+    private int deepestPointAnswer;
+    private int populousAnswer;
+    private int riverAnswer;
+    private int nukeAnswer;
     /*
     Radio Buttons and groups
      */
@@ -74,8 +74,8 @@ public class MainActivity extends AppCompatActivity {
     private  CheckBox aiCheckBox;
 
     // String values for results
-    String score;
-    String message;
+    private String score;
+    private String message;
 
     /*
     Linear layout values
@@ -264,6 +264,56 @@ public class MainActivity extends AppCompatActivity {
                     //Display result as a toast
                     Toast.makeText(context, message, durationLong).show();
                 }
+
+
+                /*
+        Color highlights for wrong answers
+         */
+
+                //If answer value is wrong
+                if (twinValue == 0) {
+                    twinQ = findViewById(R.id.twinQ);
+                    twinQ.setBackgroundColor(Color.RED);
+                }
+
+                if (waterBodyValue == 0) {
+                    waterQ = findViewById(R.id.waterBodyQ);
+                    waterQ.setBackgroundColor(Color.RED);
+                }
+                if (worldWarValue == 0) {
+                    worldWarQ = findViewById(R.id.worldWarQ);
+                    worldWarQ.setBackgroundColor(Color.RED);
+                }
+                if (nukeValue == 0) {
+                    nukeQ = findViewById(R.id.nukeQ);
+                    nukeQ.setBackgroundColor(Color.RED);
+                }
+                if (desertValue == 0) {
+                    desertQ = findViewById(R.id.desertQ);
+                    desertQ.setBackgroundColor(Color.RED);
+                }
+                if (deepestPointValue == 0) {
+                    deepestQ = findViewById(R.id.deepPointQ);
+                    deepestQ.setBackgroundColor(Color.RED);
+                }
+                if (rangeValue == 0) {
+                    rangeQ = findViewById(R.id.highestRangeQ);
+                    rangeQ.setBackgroundColor(Color.RED);
+                }
+                if (populousValue == 0) {
+                    populousQ = findViewById(R.id.mostPoplousQ);
+                    populousQ.setBackgroundColor(Color.RED);
+                }
+                if (satelliteValue == 0) {
+                    satelliteQ = findViewById(R.id.satelliteQ);
+                    satelliteQ.setBackgroundColor(Color.RED);
+                }
+                if (riverValue == 0) {
+                    riverQ = findViewById(R.id.longRiverQ);
+                    riverQ.setBackgroundColor(Color.RED);
+                }
+
+
             }
             //AI checkbox left unchecked
             else {
@@ -272,52 +322,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-        /*
-        Color highlights for wrong answers
-         */
 
-        //If answer value is wrong
-        if (twinValue == 0) {
-            twinQ = findViewById(R.id.twinQ);
-            twinQ.setBackgroundColor(Color.RED);
-        }
-
-        if (waterBodyValue == 0) {
-            waterQ = findViewById(R.id.waterBodyQ);
-            waterQ.setBackgroundColor(Color.RED);
-        }
-        if (worldWarValue == 0) {
-            worldWarQ = findViewById(R.id.worldWarQ);
-            worldWarQ.setBackgroundColor(Color.RED);
-        }
-        if (nukeValue == 0) {
-            nukeQ = findViewById(R.id.nukeQ);
-            nukeQ.setBackgroundColor(Color.RED);
-        }
-        if (desertValue == 0) {
-            desertQ = findViewById(R.id.desertQ);
-            desertQ.setBackgroundColor(Color.RED);
-        }
-        if (deepestPointValue == 0) {
-            deepestQ = findViewById(R.id.deepPointQ);
-            deepestQ.setBackgroundColor(Color.RED);
-        }
-        if (rangeValue == 0) {
-            rangeQ = findViewById(R.id.highestRangeQ);
-            rangeQ.setBackgroundColor(Color.RED);
-        }
-        if (populousValue == 0) {
-            populousQ = findViewById(R.id.mostPoplousQ);
-            populousQ.setBackgroundColor(Color.RED);
-        }
-        if (satelliteValue == 0) {
-            satelliteQ = findViewById(R.id.satelliteQ);
-            satelliteQ.setBackgroundColor(Color.RED);
-        }
-        if (riverValue == 0) {
-            riverQ = findViewById(R.id.longRiverQ);
-            riverQ.setBackgroundColor(Color.RED);
-        }
 
     }
 
@@ -835,6 +840,7 @@ public class MainActivity extends AppCompatActivity {
         if (isJapan && isNorthKorea && isRussia && isUsa //All options selected
                 ) {
             Toast.makeText(context, numberExceeded, duration).show();
+            nukeAnswer = 0;
 
         }
         return nukeAnswer;
